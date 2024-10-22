@@ -15,7 +15,7 @@
 // export default App
 
 // import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+
 import Home from './pages/Home'
 import Doctors from './pages/Doctors'
 import Login from './pages/Login'
@@ -26,6 +26,7 @@ import MyAppointments from './pages/MyAppointments'
 import Appointments from './pages/Appointments'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import { Route, Routes } from 'react-router-dom'
 
 const App = () => {
   return (
@@ -40,7 +41,7 @@ const App = () => {
         <Route path ='/contact' element={<Contact/>}/>
         <Route path ='/my-profile' element={<MyProfile/>}/>
         <Route path ='/my-appointments' element={<MyAppointments />}/>
-        <Route path ='/appointments/:docId' element={<Appointments />}/>
+        <Route path ='/appointment/:docId' element={<Appointments />}/>
 
       </Routes> 
 
