@@ -1,3 +1,18 @@
+
+# Ignora node_modules in tutte le cartelle
+node_modules/
+
+# Ignora tutti i file .env in qualsiasi sottocartella
+.env
+
+# Altri file generici da ignorare (opzionali)
+.DS_Store
+dist/
+build/
+
+
+
+
 # Logs
 logs
 *.log
@@ -24,14 +39,3 @@ dist-ssr
 *.sw?
 
 
-
-# Ignora node_modules in tutte le cartelle
-**/node_modules/
-
-# Ignora file .env in tutte le cartelle
-**/.env
-
-# Altri file da ignorare (se necessario)
-.DS_Store
-dist/
-build/
